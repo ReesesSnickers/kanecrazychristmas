@@ -1,24 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faSnowman } from "@fortawesome/free-solid-svg-icons";
+import "./App.css";
+import MainPage from "./pages/MainPage";
+
+// https://htmlstream.com/preview/unify-v2.6.2/assets/img-temp/400x450/img5.jpg
+
+library.add(faSnowman);
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MainPage />
     </div>
   );
 }

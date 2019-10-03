@@ -1,0 +1,18 @@
+.kcc-textinput-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.kcc-textinput-label {
+  margin-left: 15px;
+  font-size: 40px;
+}
+
+.kcc-textinput-input {
+  border-radius: 25px;
+  border: 3px solid #020c04;
+  min-height: 68.63px;
+  max-width: 780px;
+  font-size: 40px;
+  padding: 0px 20px;
+}

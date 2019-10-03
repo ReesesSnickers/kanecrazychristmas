@@ -1,0 +1,75 @@
+.kcc-iconbutton-primary {
+  min-width: 89.01px;
+  min-height: 89.01px;
+  border-radius: 50%;
+  border: 2px solid #0c0206;
+  cursor: pointer;
+  background: radial-gradient(#a80410, #560208);
+  position: relative;
+  z-index: 1;
+}
+.kcc-iconbutton-primary::before {
+  border-radius: 50%;
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(#69060b, #370506);
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+.kcc-iconbutton-primary:hover::before {
+  opacity: 1;
+}
+
+.kcc-iconbutton-primary > svg > path:last-child {
+  fill: #fff;
+  transition: fill 0.5s linear;
+}
+
+.kcc-iconbutton-primary:hover > svg > path:last-child {
+  fill: #a3a6a3;
+  transition: fill 0.5s linear;
+}
+
+.kcc-iconbutton-secondary {
+  min-width: 89.01px;
+  min-height: 89.01px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  background: transparent;
+  position: relative;
+  z-index: 1;
+  transition: border 0.5s linear;
+}
+
+.kcc-iconbutton-secondary:hover {
+  border: 2px solid #020c04;
+  transition: border 0.5s linear;
+}
+
+.kcc-iconbutton-secondary > svg > path:last-child {
+  fill: #020c04;
+  transition: fill 0.5s linear;
+}
+
+.kcc-iconbutton-disabled {
+  min-width: 89.01px;
+  min-height: 89.01px;
+  border-radius: 50%;
+  border: 2px solid #707070;
+  background: #707070;
+  position: relative;
+  cursor: not-allowed;
+  pointer-events: none;
+  z-index: 1;
+  transition: border 0.5s linear;
+}
+
+.kcc-iconbutton-disabled > svg > path:last-child {
+  fill: #fff;
+}

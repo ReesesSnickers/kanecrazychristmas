@@ -1,0 +1,30 @@
+.kcc-customlink-primary {
+  color: #020c04;
+  font-size: 40px;
+  transition: color 0.2s linear;
+}
+
+.kcc-customlink-primary:hover {
+  color: #a80410;
+  font-size: 40px;
+  transition: color 0.2s linear;
+}
+
+.kcc-customlink-secondary {
+  color: #a80410;
+  font-size: 40px;
+  transition: color 0.2s linear;
+}
+
+.kcc-customlink-secondary:hover {
+  color: #020c04;
+  font-size: 40px;
+  transition: color 0.2s linear;
+}
+
+.kcc-customlink-disabled {
+  color: #707070;
+  font-size: 40px;
+  cursor: not-allowed;
+  pointer-events: none;
+}
