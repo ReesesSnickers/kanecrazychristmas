@@ -1,0 +1,84 @@
+.kcc-sessionchoicepage-wrapper {
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 103%;
+  background-image: url("../../assets//images/clem-onojeghuo--jD6CM6F4fc-unsplash.jpg");
+  background-position-x: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kcc-sessionchoicepage-logo {
+  width: 900px;
+}
+
+.kcc-sessionchoicepage-session-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #7a030c;
+  background: #033c2d;
+  width: 425px;
+  height: auto;
+}
+
+.kcc-sessionchoicepage-session-buttons > .kcc-button-primary:last-child {
+  margin: 50px 50px;
+}
+.kcc-sessionchoicepage-session-buttons > .kcc-button-primary:first-child {
+  margin: 0px 50px;
+  margin-top: 50px;
+}
+
+.kcc-sessionchoicepage-login-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.kcc-sessionchoicepage-login-generic {
+  border: 3px solid #7a030c;
+  background: #033c2d;
+  width: 625px;
+  height: auto;
+  padding: 25px 50px;
+}
+
+.kcc-sessionchoicepage-login-generic-loginbutton {
+  text-align: end;
+  padding: 0px 25px;
+  margin-top: 25px;
+}
+
+.kcc-sessionchoicepage-login-generic-links .kcc-customlink-primary {
+  color: #fff;
+  font-size: 20px;
+}
+
+.kcc-sessionchoicepage-wrapper .kcc-textinput-label {
+  font-size: 30px;
+}
+
+.kcc-sessionchoicepage-wrapper .kcc-textinput-wrapper:first-child {
+  margin-bottom: 20px;
+}
+
+.kcc-sessionchoicepage-login-generic-links .kcc-customlink-primary:hover {
+  font-size: 20px;
+}
+.kcc-sessionchoicepage-login-generic-links {
+  display: flex;
+  flex-direction: row;
+}
+
+p {
+  font-size: 20px;
+  margin: 0px;
+}
+p:first-child {
+  margin-right: 20px;
+}
