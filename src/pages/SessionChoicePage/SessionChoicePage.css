@@ -82,3 +82,18 @@ p {
 p:first-child {
   margin-right: 20px;
 }
+
+.kcc-sessionchoicepage-menu {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #7a030c;
+  background: #033c2d;
+  position: absolute;
+  right: 25px;
+  top: 110px;
+}
+
+.kcc-sessionchoicepage-menu .kcc-button-primary:first-child {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,11 @@
+.kcc-errortoast {
+  display: flex;
+  background: linear-gradient(to bottom, #a80410, #560208);
+  min-height: 99px;
+  min-width: 500px;
+  max-width: 1200px;
+  align-items: center;
+  padding: 0px 25px;
+  font-size: 25px;
+  justify-content: center;
+}
