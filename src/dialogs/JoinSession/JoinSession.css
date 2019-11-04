@@ -1,0 +1,23 @@
+.kcc-joinsession {
+  color: #020c04;
+}
+.kcc-joinsession > p {
+  font-size: 30px;
+  margin-top: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: center;
+}
+.kcc-joinsession .kcc-textinput-label {
+  color: #020c04;
+}
+
+.kcc-joinsession .kcc-textinput-wrapper {
+  margin: 50px 40px 70px 40px;
+}
+
+.kcc-joinsession-button {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 100px;
+}

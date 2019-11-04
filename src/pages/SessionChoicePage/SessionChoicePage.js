@@ -8,21 +8,27 @@ import Button from "../../components/Button";
 import TextInput from "../../components/TextInput";
 import CustomLink from "../../components/CustomLink";
 import ErrorToast from "../../components/ErrorToast";
+import Dialog from "../../components/Dialog";
+
+import JoinSession from "../../dialogs/JoinSession";
+import CreateSession from "../../dialogs/CreateSession";
 
 const SessionChoicePage = ({ ...props }) => {
   let profile;
   profile = {
     name: "Bobbylee Ingalls"
   };
-  let error = true;
-  const [isMainMenuOpen, setMainMenu] = useState(false);
+  let error = false;
+  const [isMainMenuOpen, toggleMainMenu] = useState(false);
+  const [isDialogOpen, toggleDialog] = useState(false);
+  const [dialogType, setDialogType] = useState(null);
   return (
     <section className="kcc-sessionchoicepage-wrapper">
       <>
         {profile && (
           <Header
             name={profile.name}
-            setMainMenu={() => setMainMenu(!isMainMenuOpen)}
+            setMainMenu={() => toggleMainMenu(!isMainMenuOpen)}
           />
         )}
         <img
@@ -34,9 +40,18 @@ const SessionChoicePage = ({ ...props }) => {
           <section className="kcc-sessionchoicepage-session-buttons">
             <Button
               text="Create Session"
-              onClick={() => console.log("create")}
+              onClick={() => {
+                toggleDialog(true);
+                setDialogType("create");
+              }}
             />
-            <Button text="Join Session" onClick={() => console.log("join")} />
+            <Button
+              text="Join Session"
+              onClick={() => {
+                toggleDialog(true);
+                setDialogType("join");
+              }}
+            />
           </section>
         )}
         {!profile && (
@@ -66,11 +81,29 @@ const SessionChoicePage = ({ ...props }) => {
       </>
       {isMainMenuOpen && (
         <section className="kcc-sessionchoicepage-menu">
-          <Button text="Logout" onClick={() => console.log("login out")} />
-          <Button text="Edit Photo" onClick={() => console.log("edit photo")} />
+          <Button text="Logout" onClick={() => toggleMainMenu(false)} />
+          <Button text="Edit Photo" onClick={() => toggleMainMenu(false)} />
         </section>
       )}
       {error && <ErrorToast error="something went wrong" />}
+      {isDialogOpen && (
+        <Dialog
+          overlayOnclick={() => {
+            toggleDialog(false);
+            setDialogType(null);
+          }}
+        >
+          {dialogType === "join" && (
+            <JoinSession
+              onJoin={() => {
+                toggleDialog(false);
+                setDialogType(null);
+              }}
+            />
+          )}
+          {dialogType === "create" && <CreateSession />}
+        </Dialog>
+      )}
     </section>
   );
 };
