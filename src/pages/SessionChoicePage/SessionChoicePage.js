@@ -103,7 +103,6 @@ const SessionChoicePage = ({ ...props }) => {
             />
           )}
           {dialogType === "create" && <CreateSession />}
-          <GiftNumber />
         </Dialog>
       )}
     </section>
