@@ -1,8 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const CreateSession = () => {
-  return <section className="kcc-createsession">Pending Content</section>;
+import Button from "../../components/Button";
+
+const CreateSession = ({ onCreate }) => {
+  return (
+    <section className="kcc-createsession">
+      <div className="kcc-createsession-button">
+        <Button text="Create" type="secondary" onClick={onCreate} />
+      </div>
+    </section>
+  );
 };
 
 export default CreateSession;

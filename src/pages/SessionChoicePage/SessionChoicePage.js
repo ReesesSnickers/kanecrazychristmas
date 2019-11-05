@@ -12,6 +12,7 @@ import Dialog from "../../components/Dialog";
 
 import JoinSession from "../../dialogs/JoinSession";
 import CreateSession from "../../dialogs/CreateSession";
+import GiftNumber from "../../dialogs/GiftNumber";
 
 const SessionChoicePage = ({ ...props }) => {
   let profile;
@@ -49,7 +50,7 @@ const SessionChoicePage = ({ ...props }) => {
               text="Join Session"
               onClick={() => {
                 toggleDialog(true);
-                setDialogType("join");
+                // setDialogType("join");
               }}
             />
           </section>
@@ -102,6 +103,7 @@ const SessionChoicePage = ({ ...props }) => {
             />
           )}
           {dialogType === "create" && <CreateSession />}
+          <GiftNumber />
         </Dialog>
       )}
     </section>
