@@ -8,7 +8,16 @@ const Avatar = ({ image, altText, onClick, ...props }) => {
   const [avatarImage, setAvatarImage] = useState(image);
   if (!avatarImage) {
     return (
-      <div className="kcc-noavatar" onClick={onClick}>
+      <div
+        tabIndex={0}
+        className="kcc-noavatar"
+        onClick={() => onClick()}
+        onKeyDown={e => {
+          if (e.keyCode === 13 || e.keyCode === 32) {
+            onClick();
+          }
+        }}
+      >
         <FontAwesomeIcon icon="snowman" />
       </div>
     );

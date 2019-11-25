@@ -13,7 +13,11 @@ const Button = ({ text, onClick, disabled, type, ...props }) => {
       }
       disabled={disabled}
       onClick={onClick}
-      onKeyDown={onClick}
+      onKeyDown={e => {
+        if (e.keyCode === 13 || e.keyCode === 32) {
+          onClick();
+        }
+      }}
       {...props}
     >
       {text}
