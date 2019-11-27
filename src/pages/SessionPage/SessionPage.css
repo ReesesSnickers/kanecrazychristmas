@@ -1,17 +1,15 @@
-.kcc-loginpage-wrapper {
+.kcc-sessionpage-wrapper {
+  color: #fff;
   width: 100vw;
   height: 100vh;
-  background: url("../../assets//images/clem-onojeghuo--jD6CM6F4fc-unsplash.jpg")
+  background: url("../../assets//images/markus-spiske-AF_4tBQjdtc-unsplash.jpg")
     no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-position-x: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.kcc-loginpage-logo {
-  width: 900px;
 }

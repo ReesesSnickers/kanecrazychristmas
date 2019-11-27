@@ -1,0 +1,59 @@
+.kcc-gift-wrapper {
+  position: relative;
+  font-size: 45px;
+  margin: 0px 10px;
+}
+
+.kcc-gift-wrapper-disabled {
+  position: relative;
+  font-size: 45px;
+  opacity: 0.5;
+}
+
+.kcc-gift-icon > svg > path:last-child {
+  fill: #7a030c;
+}
+
+.kcc-gift-icon {
+  position: relative;
+}
+
+.kcc-gift-text {
+  position: absolute;
+  top: 14px;
+  color: #fff;
+  font-size: 30px;
+  z-index: 1;
+  cursor: default;
+}
+
+.kcc-gift-text-single {
+  left: 45%;
+}
+
+.kcc-gift-text-double {
+  left: 20%;
+}
+
+.kcc-gift-avatar {
+  position: absolute;
+  left: -5px;
+  top: 2px;
+}
+
+.kcc-gift-avatar .kcc-noavatar {
+  width: 20px;
+  height: 20px;
+  font-size: 13px;
+  cursor: inherit;
+}
+
+.kcc-gift-avatar .kcc-avatar {
+  width: 20px;
+  height: 20px;
+  cursor: inherit;
+}
+
+.kcc-gift-avatar-hidden {
+  display: none;
+}

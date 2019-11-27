@@ -1,0 +1,7 @@
+.kcc-giftwrapper-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 650px;
+  overflow: hidden;
+  flex-wrap: wrap;
+}

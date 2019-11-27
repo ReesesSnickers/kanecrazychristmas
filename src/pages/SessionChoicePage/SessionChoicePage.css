@@ -2,9 +2,12 @@
   color: #fff;
   width: 100vw;
   height: 100vh;
-  background-repeat: no-repeat;
-  background-size: 103%;
-  background-image: url("../../assets//images/clem-onojeghuo--jD6CM6F4fc-unsplash.jpg");
+  background: url("../../assets//images/clem-onojeghuo--jD6CM6F4fc-unsplash.jpg")
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-position-x: 100%;
   display: flex;
   flex-direction: column;
